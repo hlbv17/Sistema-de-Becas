@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{BBE60280-4746-4B06-ADE3-4F6ACCB60BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control", "Control\Control.csproj", "{46960465-513C-40BD-AF78-063F6F00BDC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualHLBV", "VisualHLBV\VisualHLBV.csproj", "{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE60280-4746-4B06-ADE3-4F6ACCB60BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE60280-4746-4B06-ADE3-4F6ACCB60BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE60280-4746-4B06-ADE3-4F6ACCB60BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE60280-4746-4B06-ADE3-4F6ACCB60BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46960465-513C-40BD-AF78-063F6F00BDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46960465-513C-40BD-AF78-063F6F00BDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46960465-513C-40BD-AF78-063F6F00BDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46960465-513C-40BD-AF78-063F6F00BDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD0A4D85-C627-40E0-B03D-368F8D1C08DE}
+	EndGlobalSection
+EndGlobal

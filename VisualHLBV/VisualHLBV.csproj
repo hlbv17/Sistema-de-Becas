@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA4FA664-E6F0-41D0-A99E-ED83AEBF700E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VisualHLBV</RootNamespace>
+    <AssemblyName>VisualHLBV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBecaInternacionalHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBecaInternacionalHLBV.Designer.cs">
+      <DependentUpon>FrmBecaInternacionalHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarHLBV.Designer.cs">
+      <DependentUpon>FrmEditarHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarPracticaHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarPracticaHLBV.Designer.cs">
+      <DependentUpon>FrmEditarPracticaHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltrarHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltrarHLBV.Designer.cs">
+      <DependentUpon>FrmFiltrarHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListarHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListarHLBV.Designer.cs">
+      <DependentUpon>FrmListarHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuHLBV.Designer.cs">
+      <DependentUpon>FrmMenuHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPracticaHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPracticaHLBV.Designer.cs">
+      <DependentUpon>FrmPracticaHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVisualizarBecaHLBV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVisualizarBecaHLBV.Designer.cs">
+      <DependentUpon>FrmVisualizarBecaHLBV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBecaInternacionalHLBV.resx">
+      <DependentUpon>FrmBecaInternacionalHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarHLBV.resx">
+      <DependentUpon>FrmEditarHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarPracticaHLBV.resx">
+      <DependentUpon>FrmEditarPracticaHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltrarHLBV.resx">
+      <DependentUpon>FrmFiltrarHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListarHLBV.resx">
+      <DependentUpon>FrmListarHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuHLBV.resx">
+      <DependentUpon>FrmMenuHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPracticaHLBV.resx">
+      <DependentUpon>FrmPracticaHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVisualizarBecaHLBV.resx">
+      <DependentUpon>FrmVisualizarBecaHLBV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Control\Control.csproj">
+      <Project>{46960465-513c-40bd-af78-063f6f00bdc4}</Project>
+      <Name>Control</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
