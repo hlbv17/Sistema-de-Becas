@@ -37,15 +37,18 @@ namespace VisualHLBV
             this.mniEliminar = new System.Windows.Forms.ToolStripMenuItem();
             this.mniVisualizar = new System.Windows.Forms.ToolStripMenuItem();
             this.mniFiltrar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mniSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.prácticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniSalir = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mniBecaInternacional});
+            this.mniBecaInternacional,
+            this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -70,58 +73,73 @@ namespace VisualHLBV
             // mniRegistrar
             // 
             this.mniRegistrar.Name = "mniRegistrar";
-            this.mniRegistrar.Size = new System.Drawing.Size(180, 22);
+            this.mniRegistrar.Size = new System.Drawing.Size(123, 22);
             this.mniRegistrar.Text = "Registrar";
             this.mniRegistrar.Click += new System.EventHandler(this.mniRegistrar_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // mniListar
             // 
             this.mniListar.Name = "mniListar";
-            this.mniListar.Size = new System.Drawing.Size(180, 22);
+            this.mniListar.Size = new System.Drawing.Size(123, 22);
             this.mniListar.Text = "Listar";
             this.mniListar.Click += new System.EventHandler(this.mniListar_Click);
             // 
             // mniEliminar
             // 
             this.mniEliminar.Name = "mniEliminar";
-            this.mniEliminar.Size = new System.Drawing.Size(180, 22);
+            this.mniEliminar.Size = new System.Drawing.Size(123, 22);
             this.mniEliminar.Text = "Eliminar";
             this.mniEliminar.Click += new System.EventHandler(this.mniEliminar_Click);
             // 
             // mniVisualizar
             // 
             this.mniVisualizar.Name = "mniVisualizar";
-            this.mniVisualizar.Size = new System.Drawing.Size(180, 22);
+            this.mniVisualizar.Size = new System.Drawing.Size(123, 22);
             this.mniVisualizar.Text = "Visualizar";
             this.mniVisualizar.Click += new System.EventHandler(this.mniVisualizar_Click);
             // 
             // mniFiltrar
             // 
             this.mniFiltrar.Name = "mniFiltrar";
-            this.mniFiltrar.Size = new System.Drawing.Size(180, 22);
+            this.mniFiltrar.Size = new System.Drawing.Size(123, 22);
             this.mniFiltrar.Text = "Filtrar";
             this.mniFiltrar.Click += new System.EventHandler(this.mniFiltrar_Click);
-            // 
-            // mniSalir
-            // 
-            this.mniSalir.Name = "mniSalir";
-            this.mniSalir.Size = new System.Drawing.Size(180, 22);
-            this.mniSalir.Text = "Salir";
-            this.mniSalir.Click += new System.EventHandler(this.mniSalir_Click);
             // 
             // prácticaToolStripMenuItem
             // 
             this.prácticaToolStripMenuItem.Name = "prácticaToolStripMenuItem";
-            this.prácticaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.prácticaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.prácticaToolStripMenuItem.Text = "Práctica";
             this.prácticaToolStripMenuItem.Click += new System.EventHandler(this.prácticaToolStripMenuItem_Click);
+            // 
+            // mniSalir
+            // 
+            this.mniSalir.Name = "mniSalir";
+            this.mniSalir.Size = new System.Drawing.Size(123, 22);
+            this.mniSalir.Text = "Salir";
+            this.mniSalir.Click += new System.EventHandler(this.mniSalir_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.conexionToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // conexionToolStripMenuItem
+            // 
+            this.conexionToolStripMenuItem.Name = "conexionToolStripMenuItem";
+            this.conexionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.conexionToolStripMenuItem.Text = "Conexion";
+            this.conexionToolStripMenuItem.Click += new System.EventHandler(this.conexionToolStripMenuItem_Click);
             // 
             // FrmMenuHLBV
             // 
@@ -152,5 +170,7 @@ namespace VisualHLBV
         private System.Windows.Forms.ToolStripMenuItem mniFiltrar;
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prácticaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conexionToolStripMenuItem;
     }
 }

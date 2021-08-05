@@ -99,6 +99,11 @@ namespace VisualHLBV
                 MessageBox.Show("No existen datos registrados");
             }
         }
+
+        private void conexionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            adm.Conectar();
+        }
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Datos;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace Control
     public class AdmBecaInternacionalHLBV
     {
         private static AdmBecaInternacionalHLBV adm = new AdmBecaInternacionalHLBV();
+        private ConexionHLBV con = new ConexionHLBV();
 
         List<BecaHLBV> lista = null;
         ValidacionHLBV val = null;
@@ -39,6 +41,21 @@ namespace Control
                 adm = new AdmBecaInternacionalHLBV();
             }
             return adm;
+        }
+
+        public void Conectar()
+        {
+            string mensaje = "";
+            mensaje = con.Conectar();
+            if (mensaje[0] == 1)
+            {
+                MessageBox.Show("Conexión exitosa");
+            }
+            else
+            {
+                MessageBox.Show("Error: " + mensaje);
+            }
+            con.Cerrar();
         }
 
         public void Buscar(DataGridView dgvBecas, string apellido, string montoB)
